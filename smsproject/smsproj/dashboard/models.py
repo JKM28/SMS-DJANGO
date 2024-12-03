@@ -1,8 +1,5 @@
 from django.db import models
 from twilio.rest import Client
-import os
-TWILIO_API_KEY = os.getenv("TWILIO_API_KEY")
-
 
 class Message(models.Model):
     name = models.CharField(max_length=200)
